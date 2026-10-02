@@ -13,6 +13,7 @@ import 'sized_box/LayoutDua.dart';
 import 'sized_box/Latihan2sls.dart';
 import 'sized_box/Latihan3sls.dart';
 import 'sized_box/Latihan4sls.dart';
+import 'sized_box/Latihanig.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -25,12 +26,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        // appBar: AppBar(
-        //   title: Text("Latihan Container Ani"),
-        //   backgroundColor: Colors.lightGreen,
-        //   centerTitle: true,
-        // ),
-     body: Latihan4sls(),
+        appBar: AppBar(
+          title: Text("Latihan Container Ani"),
+          backgroundColor: Colors.lightGreen,
+          centerTitle: true,
+        ),
+     body: Latihanig(),
       ),
     );
   }
