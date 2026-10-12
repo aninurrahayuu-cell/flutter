@@ -1,48 +1,81 @@
 import 'package:flutter/material.dart';
 
 class Latihanig extends StatelessWidget {
-
-  // data story di atas
-  final List storyUser = [
+  // Data username untuk Story (total 10 akun sesuai permintaan)
+  final List<String> storyUser = [
     'Your Story',
-    'budi_rpl',
-    'siti_xii',
-    'andi_01',
-    'dina_rpl',
-    'rizky_88',
-    'maya_a',
+    'rahani.fen',
+    'd1ilash',
+    'avocad1lsh',
+    'athvwa',
+    'anggiouu',
+    'riskauls',
+    'zycheese',
+    'nurra.yua',
+    'whosgun_13',
+    'dodolgarutt',
   ];
 
-  // data feed instagram
-  final List feedUser = [
-    'budi_rpl',
-    'siti_xii',
-    'xii_rpl_1',
-    'andi_01',
-    'dina_rpl',
-    'rizky_88',
-    'maya_a',
-    'smk_bisa',
-    'agung_rpl',
-    'dev_flutter',
+  // Data username untuk Feed
+  final List<String> feedUser = [
+    'rahani.fen',
+    'd1ilash',
+    'avocad1lsh',
+    'athvwa',
+    'anggiouu',
+    'riskauls',
+    'zycheese',
+    'nurra.yua',
+    'whosgun_13',
+    'dodolgarutt',
   ];
 
-  final List captions = [
-    'Hore liburan telah tiba! 🏖️',
-    'Tugas mobile dev selesai gaes #flutter',
-    'Semangat kelas XII RPL 1 🔥',
-    'Kopi siang ini terasa mantap ☕',
-    'Coding seharian tapi seru 💻',
-    'Weekend jalan-jalan bareng temen',
-    'Projek baru Bismillah lancar',
-    'Foto kenangan masa sekolah 📸',
-    'Belajar layouting instagram di flutter',
-    'Next project bikin UI ecommerce!',
+  // URL Foto Profil yang bervariasi dari Unsplash
+  final List<String> profileImages = [
+    'https://png.pngtree.com/png-clipart/20240812/original/pngtree-cute-panda-standing-with-happy-expression-png-image_15762144.png',
+    'https://png.pngtree.com/png-vector/20250523/ourmid/pngtree-single-delicate-white-flower-blossom-closeup-png-image_16293069.png',
+    'https://png.pngtree.com/png-clipart/20241117/original/pngtree-blue-flower-png-image_17190083.png',
+    'https://png.pngtree.com/png-vector/20250506/ourmid/pngtree-pink-flower-png-png-image_16153570.png',
+    'https://png.pngtree.com/png-vector/20240125/ourmid/pngtree-mugunghwa-pink-flower-of-korea-png-png-image_11494956.png',
+    'https://png.pngtree.com/png-vector/20250523/ourmid/pngtree-single-delicate-white-flower-blossom-closeup-png-image_16293069.png',
+    'https://png.pngtree.com/png-clipart/20241117/original/pngtree-blue-flower-png-image_17190083.png',
+    'https://png.pngtree.com/png-clipart/20250202/original/pngtree-blue-flower-bouquet-illustration-png-image_19853767.png',
+    'https://png.pngtree.com/png-vector/20240913/ourmid/pngtree-violet-flowers-png-image_12922047.png',
+    'https://png.pngtree.com/png-vector/20240125/ourmid/pngtree-mugunghwa-pink-flower-of-korea-png-png-image_11494956.png',
+    'https://png.pngtree.com/png-clipart/20250202/original/pngtree-blue-flower-bouquet-illustration-png-image_19853767.png',
+  ];
+
+  // URL Foto Postingan Feed yang bervariasi dan estetik
+  final List<String> postImages = [
+    'https://png.pngtree.com/png-vector/20250523/ourmid/pngtree-single-delicate-white-flower-blossom-closeup-png-image_16293069.png',
+    'https://png.pngtree.com/png-clipart/20241117/original/pngtree-blue-flower-png-image_17190083.png',
+    'https://png.pngtree.com/png-vector/20250506/ourmid/pngtree-pink-flower-png-png-image_16153570.png',
+    'https://png.pngtree.com/png-vector/20240125/ourmid/pngtree-mugunghwa-pink-flower-of-korea-png-png-image_11494956.png',
+    'https://png.pngtree.com/png-vector/20250523/ourmid/pngtree-single-delicate-white-flower-blossom-closeup-png-image_16293069.png',
+    'https://png.pngtree.com/png-clipart/20241117/original/pngtree-blue-flower-png-image_17190083.png',
+    'https://png.pngtree.com/png-clipart/20250202/original/pngtree-blue-flower-bouquet-illustration-png-image_19853767.png',
+    'https://png.pngtree.com/png-vector/20240913/ourmid/pngtree-violet-flowers-png-image_12922047.png',
+    'https://png.pngtree.com/png-vector/20240125/ourmid/pngtree-mugunghwa-pink-flower-of-korea-png-png-image_11494956.png',
+    'https://png.pngtree.com/png-clipart/20250202/original/pngtree-blue-flower-bouquet-illustration-png-image_19853767.png',
+  ];
+
+  final List<String> captions = [
+    'cantikk',
+    'indah',
+    'wowww',
+    'karya tuhan',
+    'indah sekali',
+    'nemu di taman',
+    'oww kerennn',
+    'baguss banget',
+    'suka dehh',
+    'MAHADAHSYATT',
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text(
           'Instagram',
@@ -53,7 +86,7 @@ class Latihanig extends StatelessWidget {
           ),
         ),
         backgroundColor: Colors.white,
-        elevation: 1,
+        elevation: 0.5,
         actions: [
           IconButton(
             icon: Icon(Icons.favorite_border, color: Colors.black),
@@ -70,11 +103,11 @@ class Latihanig extends StatelessWidget {
           children: [
             // 1. Tampilan Story di paling atas (Scroll Horizontal)
             Container(
-              height: 100,
+              height: 105,
               padding: EdgeInsets.symmetric(vertical: 8),
               decoration: BoxDecoration(
                 border: Border(
-                  bottom: BorderSide(color: Colors.grey[300]!, width: 0.5),
+                  bottom: BorderSide(color: Colors.grey[200]!, width: 1),
                 ),
               ),
               child: ListView.builder(
@@ -86,24 +119,24 @@ class Latihanig extends StatelessWidget {
                     child: Column(
                       children: [
                         Container(
-                          padding: EdgeInsets.all(2),
+                          padding: EdgeInsets.all(2.5),
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             border: Border.all(
                               color: index == 0 ? Colors.grey : Colors.pink,
-                              width: 2,
+                              width: 2.5,
                             ),
                           ),
                           child: CircleAvatar(
-                            radius: 27,
-                            backgroundColor: Colors.grey[300],
-                            child: Icon(Icons.person, color: Colors.grey[700]),
+                            radius: 28,
+                            backgroundImage: NetworkImage(profileImages[index]),
                           ),
                         ),
                         SizedBox(height: 4),
                         Text(
                           storyUser[index],
-                          style: TextStyle(fontSize: 11),
+                          style: TextStyle(fontSize: 11, color: Colors.black87),
+                          overflow: TextOverflow.ellipsis,
                         ),
                       ],
                     ),
@@ -116,7 +149,7 @@ class Latihanig extends StatelessWidget {
             ListView.builder(
               shrinkWrap: true,
               physics: NeverScrollableScrollPhysics(),
-              itemCount: 10, // 10 postingan feed
+              itemCount: 10,
               itemBuilder: (context, index) {
                 return Container(
                   margin: EdgeInsets.only(bottom: 15),
@@ -125,18 +158,17 @@ class Latihanig extends StatelessWidget {
                     children: [
                       // Header Postingan (Foto profil + Nama akun)
                       Padding(
-                        padding: EdgeInsets.all(10),
+                        padding: EdgeInsets.symmetric(horizontal: 10, vertical: 8),
                         child: Row(
                           children: [
                             CircleAvatar(
                               radius: 18,
-                              backgroundColor: Colors.grey[400],
-                              child: Icon(Icons.person, size: 20, color: Colors.white),
+                              backgroundImage: NetworkImage(profileImages[index + 1]),
                             ),
                             SizedBox(width: 10),
                             Text(
                               feedUser[index],
-                              style: TextStyle(fontWeight: FontWeight.bold),
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
                             ),
                             Spacer(),
                             Icon(Icons.more_vert),
@@ -144,40 +176,38 @@ class Latihanig extends StatelessWidget {
                         ),
                       ),
 
-                      // Gambar Postingan Feed
+                      // Gambar Postingan Feed (Menggunakan gambar asli dari Unsplash)
                       Container(
-                        height: 300,
+                        height: 320,
                         width: double.infinity,
-                        color: Colors.blueGrey[(index % 5 + 2) * 100],
-                        child: Center(
-                          child: Icon(
-                            Icons.image,
-                            size: 80,
-                            color: Colors.white60,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: NetworkImage(postImages[index]),
+                            fit: BoxFit.cover,
                           ),
                         ),
                       ),
 
-                      // Tombol Aksi (Love, Message, Share, Favorite/Bookmark)
+                      // Tombol Aksi (Love, Message, Share, Bookmark)
                       Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                        padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
                         child: Row(
                           children: [
                             IconButton(
-                              icon: Icon(Icons.favorite_border),
+                              icon: Icon(Icons.favorite_border, size: 26),
                               onPressed: () {},
                             ),
                             IconButton(
-                              icon: Icon(Icons.chat_bubble_outline),
+                              icon: Icon(Icons.chat_bubble_outline, size: 24),
                               onPressed: () {},
                             ),
                             IconButton(
-                              icon: Icon(Icons.send_outlined),
+                              icon: Icon(Icons.send_outlined, size: 24),
                               onPressed: () {},
                             ),
                             Spacer(),
                             IconButton(
-                              icon: Icon(Icons.bookmark_border),
+                              icon: Icon(Icons.bookmark_border, size: 26),
                               onPressed: () {},
                             ),
                           ],
@@ -188,8 +218,8 @@ class Latihanig extends StatelessWidget {
                       Padding(
                         padding: EdgeInsets.symmetric(horizontal: 14),
                         child: Text(
-                          '${(index + 1) * 12} likes',
-                          style: TextStyle(fontWeight: FontWeight.bold),
+                          '${(index + 1) * 15} likes',
+                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
                         ),
                       ),
 

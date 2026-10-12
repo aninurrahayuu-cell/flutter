@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_flutter/sized_box/ListScreen.dart';
 import 'container/ContainerSatu.dart';
 import 'container/LatihanContainer.dart';
 import 'row_column/RowWidget.dart';
@@ -14,6 +15,9 @@ import 'sized_box/Latihan2sls.dart';
 import 'sized_box/Latihan3sls.dart';
 import 'sized_box/Latihan4sls.dart';
 import 'sized_box/Latihanig.dart';
+import 'sized_box/DetailScreen.dart';
+import 'sized_box/Grid.dart';
+import 'sized_box/ListScreen.dart';
 void main() {
   runApp(const MyApp());
 }
