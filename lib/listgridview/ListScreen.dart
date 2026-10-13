@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:project_flutter/sized_box/DetailScreen.dart';
-import 'package:project_flutter/sized_box/ListScreen.dart';
+import 'package:project_flutter/listgridview/DetailScreen.dart';
+import 'package:project_flutter/listgridview/ListScreen.dart';
 
 class ArticleListScreen extends StatelessWidget {
   const ArticleListScreen({super.key});
