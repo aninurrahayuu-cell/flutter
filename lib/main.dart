@@ -19,6 +19,7 @@ import 'listgridview/DetailScreen.dart';
 import 'listgridview/Grid.dart';
 import 'listgridview/ListScreen.dart';
 import 'routes/app_routes.dart';
+import 'pages/form_page.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/',
+      initialRoute: '/form-page',
       routes: AppRoutes.routes,
     );
   }

@@ -9,6 +9,7 @@ import 'package:project_flutter/row_column/RowWidget.dart';
 import 'package:project_flutter/sized_box/ExpendedWidget.dart';
 import 'package:project_flutter/sized_box/SizedBoxWidget.dart';
 import 'package:project_flutter/sized_box/StackWidget.dart';
+import 'package:project_flutter/pages/form_page.dart';
 import 'package:flutter/material.dart';
 
 class AppRoutes {
@@ -23,6 +24,7 @@ class AppRoutes {
   static const expanded = '/expended-widget';
   static const sizedbox = '/sizedbox-widget';
   static const stack = '/stack-widget';
+  static const form = '/form-page';
 
   static Map<String, WidgetBuilder> routes = {
     home: (context) => HomePage(),
@@ -41,5 +43,6 @@ class AppRoutes {
     expanded:(context) => ExpendedWidget(),
     sizedbox:(context) => SizedBoxWidget(),
     stack:(context) => StackWidget(),
+    form:(context) => FormPage(),
   };
 }
