@@ -10,6 +10,11 @@ import 'package:project_flutter/sized_box/ExpendedWidget.dart';
 import 'package:project_flutter/sized_box/SizedBoxWidget.dart';
 import 'package:project_flutter/sized_box/StackWidget.dart';
 import 'package:project_flutter/pages/form_page.dart';
+import 'package:project_flutter/pages/input_page.dart';
+import 'package:project_flutter/pages/formulir_page.dart';
+import 'package:project_flutter/pages/ticket_page.dart';
+import 'package:project_flutter/pages/fetch_api_page.dart';
+import 'package:project_flutter/pages/post_page.dart';
 import 'package:flutter/material.dart';
 
 class AppRoutes {
@@ -25,6 +30,12 @@ class AppRoutes {
   static const sizedbox = '/sizedbox-widget';
   static const stack = '/stack-widget';
   static const form = '/form-page';
+  static const input = '/input-page';
+  static const formulir = '/formulir-page';
+  static const ticketStadion = '/ticket-page';
+  static const fetchapi = '/album-page';
+  static const post = '/post-page';
+
 
   static Map<String, WidgetBuilder> routes = {
     home: (context) => HomePage(),
@@ -44,5 +55,10 @@ class AppRoutes {
     sizedbox:(context) => SizedBoxWidget(),
     stack:(context) => StackWidget(),
     form:(context) => FormPage(),
+    input:(context) => BelajarForm(),
+    formulir:(context) => FormulirPage(),
+    ticketStadion:(context) => TicketPage(),
+    fetchapi:(context) => AlbumPage(),
+    post:(context) => PostPage(),
   };
 }

@@ -70,6 +70,36 @@ class HomePage extends StatelessWidget {
               },
               child: Text('Masuk Stack'),
             ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/input-page');
+              },
+              child: Text('Masuk Input'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/formulir-page');
+              },
+              child: Text('Masuk Formulir'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/ticket-page');
+              },
+              child: Text('Masuk Tiket'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/album-page');
+              },
+              child: Text('Masuk Album'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/post-page');
+              },
+              child: Text('Masuk Post'),
+            ),
           ],
         ),
       ),
